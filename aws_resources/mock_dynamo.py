@@ -12,6 +12,22 @@ mock_verification = {
     'expiration': str(int(time.time() + 1200))
 }
 
+mock_create_hang = {
+            "name": "Crimps",
+        }
+
+mock_hang = {
+            'id': '1',
+            "name": "new hang name"
+        }
+
+another_mock_hang = {
+            'id': '2',
+            "name": "new hang name"
+        }
+  
+
+
 @mock_dynamodb2
 def setup_mocks():
     dynamodb = boto3.resource('dynamodb')

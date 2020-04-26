@@ -1,7 +1,5 @@
 ![](hangtimelogo.png)
 
-hangtime is a very tiny passwordless GraphQL authentication service. hangtime keeps authentication simple with 3 easy steps.
-
 ## Step 1
 
 - sends code to user's phone
