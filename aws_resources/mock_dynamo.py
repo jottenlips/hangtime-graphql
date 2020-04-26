@@ -13,20 +13,8 @@ mock_verification = {
 }
 
 mock_create_hang = {
-            "name": "Crimps",
-        }
-
-mock_hang = {
-            'id': '1',
-            "name": "new hang name"
-        }
-
-another_mock_hang = {
-            'id': '2',
-            "name": "new hang name"
-        }
-  
-
+     "pk": "",
+}
 
 @mock_dynamodb2
 def setup_mocks():
