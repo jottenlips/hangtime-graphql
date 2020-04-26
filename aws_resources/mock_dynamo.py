@@ -12,8 +12,22 @@ mock_verification = {
     'expiration': str(int(time.time() + 1200))
 }
 
-mock_create_hang = {
-     "pk": "",
+mock_completed_hang = {
+     "pk": "user#123",
+     "sk": "completedHang#hangSession#789#id#345"
+}
+
+mock_hang_session = {
+    "pk": "user#123",
+    "sk": "hangSession#789",
+    "name": "Crimps",
+    "difficulty": "38mm",
+    "notes": "This hang is very easy",
+    "hangTime": 10,
+    "restTime": 10,
+    "breakTime": 60,
+    "reps": 3,
+    "hangsPerRep": 3
 }
 
 @mock_dynamodb2
