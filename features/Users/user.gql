@@ -8,7 +8,7 @@ input TAVerifyInput {
   code: String!
 }
 
-type TAUserResp implements TinyAuthResponse {
+type TAUserResp implements HangTimeResponse {
   status: String!
   success: Boolean!
   message: String!

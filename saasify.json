@@ -1,10 +1,10 @@
 {
-  "name": "tinyauth",
+  "name": "hangtime",
   "description": "✨ A tiny passwordless authentication api 📱",
-  "backendUrl": "https://tinyauth.io",
+  "backendUrl": "https://hangtime.io",
   "saas": {
     "name": "",
-    "logo": "tinyauthlogo.png",
+    "logo": "hangtimelogo.png",
     "theme": {
       "color": "#ff00ff"
     }

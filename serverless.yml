@@ -1,6 +1,6 @@
-service: tinyauth-graphql-api
-app: tinyauth-graphql-api
-name: tinyauth-graphql-api
+service: hangtime-graphql-api
+app: hangtime-graphql-api
+name: hangtime-graphql-api
 
 plugins:
   - serverless-offline
@@ -33,7 +33,7 @@ provider:
         - dynamodb:UpdateItem
         - dynamodb:DeleteItem
       Resource:
-        - { "Fn::GetAtt": ["tinyauthtable", "Arn"] }
+        - { "Fn::GetAtt": ["hangtimetable", "Arn"] }
     - Effect: "Allow"
       Action:
         - "SNS:Publish"
@@ -70,10 +70,10 @@ functions:
 
 resources:
   Resources:
-    tinyauthtable:
+    hangtimetable:
       Type: AWS::DynamoDB::Table
       Properties:
-        TableName: tinyauth-${self:provider.stage}
+        TableName: hangtime-${self:provider.stage}
         AttributeDefinitions:
           - AttributeName: pk
             AttributeType: S

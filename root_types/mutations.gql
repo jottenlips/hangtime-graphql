@@ -1,9 +1,9 @@
-interface TinyAuthResponse {
+interface HangTimeResponse {
   status: String!
   success: Boolean!
   message: String!
 }
 
 type Mutation {
-  hello: TinyAuthResponse
+  hello: HangTimeResponse
 }

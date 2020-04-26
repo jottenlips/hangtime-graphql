@@ -1,6 +1,6 @@
-![](tinyauthlogo.png)
+![](hangtimelogo.png)
 
-tinyauth is a very tiny passwordless GraphQL authentication service. tinyauth keeps authentication simple with 3 easy steps.
+hangtime is a very tiny passwordless GraphQL authentication service. hangtime keeps authentication simple with 3 easy steps.
 
 ## Step 1
 
@@ -48,11 +48,11 @@ mutation {
 
 ### Develop
 
-Set up your .aws credentials, make a DynamoDB table named tinyauth-dev
+Set up your .aws credentials, make a DynamoDB table named hangtime-dev
 
 Install node (to run serverless-offline). I use nvm to manage my node versions.
 
-Go to your tinyauth-api folder:
+Go to your hangtime-graphql folder:
 
 `touch .env`
 
@@ -79,7 +79,7 @@ Run queries in Graphi at http://localhost:8000/graphql
 
 ### Run Tests
 
-`TABLE_NAME=tinyauth-test API_SECRET=somethingsecret python -m pytest` or `yarn run test`
+`TABLE_NAME=hangtime-test API_SECRET=somethingsecret python -m pytest` or `yarn run test`
 
 ### Deploy
 
@@ -108,7 +108,7 @@ mutation SendVerification($phone: String!) {
 """
 
 # or localhost:8000 for dev
-requests.post('https://tinyauth.io/graphql', json={'query': mutation, 'variables': variables})
+requests.post('https://hangtime.io/graphql', json={'query': mutation, 'variables': variables})
 ```
 
 #### Verify user
@@ -129,7 +129,7 @@ mutation VerifyUser($phone: String!, $code: String!) {
 """
 
 # or localhost:8000 for dev
-requests.post('https://tinyauth.io/graphql', json={'query': mutation, 'variables': variables})
+requests.post('https://hangtime.io/graphql', json={'query': mutation, 'variables': variables})
 ```
 
 #### Get Me
@@ -138,7 +138,7 @@ requests.post('https://tinyauth.io/graphql', json={'query': mutation, 'variables
 import requests
 
 headers = {
-  "auth": your-tinyauth-jwt
+  "auth": your-hangtime-jwt
 }
 
 query = """
@@ -151,5 +151,5 @@ query = """
 """
 
 # or localhost:8000 for dev
-requests.post('https://tinyauth.io/graphql', json={'query': query}, headers=headers)
+requests.post('https://hangtime.io/graphql', json={'query': query}, headers=headers)
 ```

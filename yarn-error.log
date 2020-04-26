@@ -2,7 +2,7 @@ Arguments:
   /Users/johnottenlips/.nvm/versions/node/v13.1.0/bin/node /usr/local/Cellar/yarn/1.13.0/libexec/bin/yarn.js add @serverless-passwordless
 
 PATH: 
-  /Users/johnottenlips/tinyauth-api/venv/bin:/usr/local/opt/mysql@5.7/bin:/Users/johnottenlips/.rvm/gems/ruby-2.4.1/bin:/Users/johnottenlips/.rvm/gems/ruby-2.4.1@global/bin:/Users/johnottenlips/.rvm/rubies/ruby-2.4.1/bin:/Users/johnottenlips/.rvm/bin:/Users/johnottenlips/.nvm/versions/node/v13.1.0/bin:/Users/johnottenlips/flutter/bin:/Users/johnottenlips/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin
+  /Users/johnottenlips/hangtime-graphql/venv/bin:/usr/local/opt/mysql@5.7/bin:/Users/johnottenlips/.rvm/gems/ruby-2.4.1/bin:/Users/johnottenlips/.rvm/gems/ruby-2.4.1@global/bin:/Users/johnottenlips/.rvm/rubies/ruby-2.4.1/bin:/Users/johnottenlips/.rvm/bin:/Users/johnottenlips/.nvm/versions/node/v13.1.0/bin:/Users/johnottenlips/flutter/bin:/Users/johnottenlips/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin
 
 Yarn version: 
   1.13.0
@@ -28,24 +28,24 @@ Trace:
 
 npm manifest: 
   {
-    "name": "tinyauth-graphql-api",
+    "name": "hangtime-graphql-api",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
     "scripts": {
       "start": "sls wsgi serve -p 8000",
-      "test": "TABLE_NAME=tinyauth-test python -m pytest"
+      "test": "TABLE_NAME=hangtime-test python -m pytest"
     },
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/jottenlips/tinyauth-api.git"
+      "url": "git+https://github.com/jottenlips/hangtime-graphql.git"
     },
     "author": "",
     "license": "ISC",
     "bugs": {
-      "url": "https://github.com/jottenlips/tinyauth-api/issues"
+      "url": "https://github.com/jottenlips/hangtime-graphql/issues"
     },
-    "homepage": "https://github.com/jottenlips/tinyauth-api#readme",
+    "homepage": "https://github.com/jottenlips/hangtime-graphql#readme",
     "devDependencies": {
       "serverless-dotenv-plugin": "^2.1.1",
       "serverless-offline": "^5.12.0",

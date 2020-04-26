@@ -1,22 +1,22 @@
 {
-  "name": "tinyauth-graphql-api",
+  "name": "hangtime-graphql-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "sls wsgi serve -p 8000",
-    "test": "TABLE_NAME=tinyauth-test API_SECRET=somethingsecret python -m pytest"
+    "test": "TABLE_NAME=hangtime-test API_SECRET=somethingsecret python -m pytest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jottenlips/tinyauth-api.git"
+    "url": "git+https://github.com/jottenlips/hangtime-graphql.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jottenlips/tinyauth-api/issues"
+    "url": "https://github.com/jottenlips/hangtime-graphql/issues"
   },
-  "homepage": "https://github.com/jottenlips/tinyauth-api#readme",
+  "homepage": "https://github.com/jottenlips/hangtime-graphql#readme",
   "devDependencies": {
     "serverless-domain-manager": "^3.3.2",
     "serverless-dotenv-plugin": "^2.1.1",
